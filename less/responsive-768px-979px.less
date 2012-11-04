@@ -1,20 +1,18 @@
-// PORTRAIT TABLET TO DEFAULT DESKTOP
-// ----------------------------------
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
 
 @media (min-width: 768px) and (max-width: 979px) {
 
   // Fixed grid
-  //#grid > .core(42px, 20px);
-  #grid > .core(21px, 10px);
+  #grid > .core(@gridColumnWidth768, @gridGutterWidth768);
 
   // Fluid grid
-  //#grid > .fluid(5.801104972%, 2.762430939%);
-  #grid > .fluid(2.9914529915%, 1.2263099219130434782608695652174%);
-
+  #grid > .fluid(@fluidGridColumnWidth768, @fluidGridGutterWidth768);
 
   // Input grid
-  //#grid > .input(42px, 20px);
-  #grid > .input(21px, 10px);
+  #grid > .input(@gridColumnWidth768, @gridGutterWidth768);
 
   // No need to reset .thumbnails here since it's the same @gridGutterWidth
 
